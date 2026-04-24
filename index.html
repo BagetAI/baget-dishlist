@@ -16,9 +16,9 @@
                 <span class="logo-text">DishList</span>
             </div>
             <nav class="desktop-nav">
-                <a href="#search-demo" class="nav-link">Try Search</a>
-                <a href="#gallery" class="nav-link">Taste Vault</a>
-                <a href="#features" class="nav-link">How it Works</a>
+                <a href="#search-demo" class="nav-link">Search</a>
+                <a href="#quick-log" class="nav-link">Quick Log</a>
+                <a href="#recent-feed" class="nav-link">Live Feed</a>
                 <a href="#waitlist" class="btn btn-primary">Join Waitlist</a>
             </nav>
         </div>
@@ -31,7 +31,7 @@
                 <h1>Stop searching for <span class="serif-italic">restaurants</span>. Find the exact <span class="highlight">dish</span> you crave.</h1>
                 <p class="lead">DishList indexes specific plates, not just places. Build a searchable Taste Passport of your favorite memories and discover new gems with Google-powered insights.</p>
                 <div class="hero-cta-group">
-                    <a href="#search-demo" class="btn btn-large btn-primary">Try the Demo</a>
+                    <a href="#search-demo" class="btn btn-large btn-primary">Explore Demo</a>
                     <a href="#waitlist" class="btn btn-large btn-outline">Join Waitlist</a>
                 </div>
             </div>
@@ -47,100 +47,71 @@
         <div class="container">
             <div class="demo-card">
                 <div class="demo-header">
-                    <span class="subheadline">Live Demo</span>
+                    <span class="subheadline">Memory Search</span>
                     <h2>Search by specific plate.</h2>
-                    <p>Type a dish name below to see how DishList surfaces your memories and Google data.</p>
+                    <p>Experience how DishList filters through your "Taste Vault" and layers on Google sentiment data.</p>
                 </div>
                 
                 <div class="search-widget">
                     <div class="search-input-container">
                         <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                        <input type="text" id="dishSearch" placeholder="Search for 'Ramen', 'Pesto', or 'Egg Salad'..." autocomplete="off">
+                        <input type="text" id="dishSearch" placeholder="Search for 'Smash Burger', 'Pesto', or 'Ramen'..." autocomplete="off">
                     </div>
                     
                     <div id="searchResults" class="search-results-list">
-                        <!-- Dynamic results will appear here -->
-                        <div class="search-placeholder-msg">Start typing to explore your vault...</div>
+                        <div class="search-placeholder-msg">Start typing to see your memories...</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="gallery" class="dish-gallery">
+    <section id="quick-log" class="interactive-log">
+        <div class="container split-grid">
+            <div class="split-content">
+                <span class="subheadline">AI Quick Log</span>
+                <h2>One photo. Instant ledger.</h2>
+                <p>Upload any food photo and let our vision engine do the work. It identifies the dish, tags the venue via metadata, and adds it to your searchable passport.</p>
+                <div class="upload-sim">
+                    <div id="dropZone" class="drop-zone">
+                        <div class="drop-zone-content">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                            <p>Click to simulate an upload</p>
+                        </div>
+                    </div>
+                    <div id="logProcessing" class="log-processing hidden">
+                        <div class="spinner"></div>
+                        <p>AI is identifying your plate...</p>
+                    </div>
+                    <div id="logResult" class="log-result hidden">
+                        <div class="result-badge">Match Found</div>
+                        <h3>Classic Smash Burger</h3>
+                        <p>7th Street Burger • East Village</p>
+                    </div>
+                </div>
+            </div>
+            <div class="split-visual">
+                <div class="feature-card">
+                    <img src="images/close-up-overhead-shot-of-a-perfectly-se.png" alt="Burger Logging Example">
+                    <div class="tag-overlay">
+                        <div class="tag-label">Identified: Smash Burger</div>
+                        <div class="tag-confidence">99.2% Accuracy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recent-feed" class="live-feed">
         <div class="container">
             <div class="section-header">
-                <h2>Your Digital Plate Ledger</h2>
-                <p>From hidden gems to classic cravings, never forget a bite.</p>
+                <span class="subheadline">Live Community Data</span>
+                <h2>Recently Logged Plates</h2>
+                <p>Real-time entries from the DishList beta cohorts in NYC & LA.</p>
             </div>
-            <div class="card-grid">
-                <div class="dish-card">
-                    <div class="dish-img-wrapper">
-                        <img src="images/editorial-photography-of-a-gourmet-egg-s.png" alt="Egg Salad Sandwich">
-                        <span class="category-tag">Lunch</span>
-                    </div>
-                    <div class="dish-info">
-                        <h3>Egg Salad Sandwich</h3>
-                        <p class="venue">The Daily Provisions • NYC</p>
-                        <div class="dish-meta">
-                            <span class="rating">5.0 ★</span>
-                            <span class="date">May 2026</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="dish-card">
-                    <div class="dish-img-wrapper">
-                        <img src="images/macro-shot-of-penne-pesto-pasta-with-toa.png" alt="Penne Pesto">
-                        <span class="category-tag">Dinner</span>
-                    </div>
-                    <div class="dish-info">
-                        <h3>Penne Pesto</h3>
-                        <p class="venue">Trattoria L'Incontro • Queens</p>
-                        <div class="dish-meta">
-                            <span class="rating">4.8 ★</span>
-                            <span class="date">April 2026</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="dish-card">
-                    <div class="dish-img-wrapper">
-                        <img src="images/overhead-shot-of-a-steaming-bowl-of-spic.png" alt="Spicy Ramen">
-                        <span class="category-tag">Late Night</span>
-                    </div>
-                    <div class="dish-info">
-                        <h3>Spicy Tonkotsu</h3>
-                        <p class="venue">Ippudo Ramen • East Village</p>
-                        <div class="dish-meta">
-                            <span class="rating">4.9 ★</span>
-                            <span class="date">March 2026</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="features" class="features-split">
-        <div class="container">
-            <div class="split-row">
-                <div class="split-text">
-                    <span class="subheadline">AI Quick Log</span>
-                    <h2>Automate your food journal.</h2>
-                    <p>Stop wasting time manually logging. Simply upload your food photos, and our AI identifies the dish, pulls the location data, and indexes it into your personal Taste Passport instantly.</p>
-                </div>
-                <div class="split-visual">
-                    <img src="images/hand-holding-a-premium-smartphone-in-a-s.png" alt="AI Log Interface">
-                </div>
-            </div>
-            <div class="split-row reverse">
-                <div class="split-text">
-                    <span class="subheadline">Contextual Discovery</span>
-                    <h2>The layer on top of Google.</h2>
-                    <p>We combine your personal memories with real-time sentiment from Google and Yelp. Find the best "Penne Pesto" within 5 miles, not just the best "Italian Restaurant."</p>
-                </div>
-                <div class="split-visual">
-                    <img src="images/minimalist-isometric-illustration-of-a-d.png" alt="Discovery Interface">
-                </div>
+            <div id="recentDishes" class="recent-grid">
+                <!-- Data loaded from DB -->
+                <div class="loading-state">Syncing with Taste Vault...</div>
             </div>
         </div>
     </section>
@@ -149,8 +120,8 @@
         <div class="container">
             <div class="waitlist-container">
                 <div class="waitlist-content">
-                    <h2>Claim Your Spot</h2>
-                    <p>Join 500+ foodies building the world's first plate-first discovery engine. Get early access to DishList Pro.</p>
+                    <h2>Claim Your Taste Passport</h2>
+                    <p>Join 500+ urban explorers building the future of dish discovery. Private beta access includes the full AI Quick Log engine.</p>
                     <form id="waitlistForm" class="signup-form">
                         <div class="input-row">
                             <input type="text" name="full_name" placeholder="Full Name" required>
@@ -179,14 +150,14 @@
         <div class="container">
             <div class="footer-top">
                 <span class="logo-text">DishList</span>
-                <p>The dish-first memory map for your favorite flavors.</p>
+                <p>Ensuring no great culinary memory is ever lost. Built for the discerning diner.</p>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 DishList. Built for the high-intent urban foodie.</p>
+                <p>&copy; 2026 DishList. All rights reserved.</p>
                 <div class="footer-meta">
                     <a href="mailto:eli@team-maia.com">Support</a>
                     <span>•</span>
-                    <a href="#">Privacy</a>
+                    <a href="#">Privacy Policy</a>
                 </div>
             </div>
         </div>
