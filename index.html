@@ -16,6 +16,7 @@
                 <span class="logo-text">DishList</span>
             </div>
             <nav class="desktop-nav">
+                <a href="#search-demo" class="nav-link">Try Search</a>
                 <a href="#gallery" class="nav-link">Taste Vault</a>
                 <a href="#features" class="nav-link">How it Works</a>
                 <a href="#waitlist" class="btn btn-primary">Join Waitlist</a>
@@ -30,13 +31,37 @@
                 <h1>Stop searching for <span class="serif-italic">restaurants</span>. Find the exact <span class="highlight">dish</span> you crave.</h1>
                 <p class="lead">DishList indexes specific plates, not just places. Build a searchable Taste Passport of your favorite memories and discover new gems with Google-powered insights.</p>
                 <div class="hero-cta-group">
-                    <a href="#waitlist" class="btn btn-large btn-primary">Start Your Passport</a>
-                    <a href="#gallery" class="btn btn-large btn-outline">Explore Dishes</a>
+                    <a href="#search-demo" class="btn btn-large btn-primary">Try the Demo</a>
+                    <a href="#waitlist" class="btn btn-large btn-outline">Join Waitlist</a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="mockup-frame">
                     <img src="images/editorial-food-photography-of-a-stunning.png" alt="DishList Mobile App Interface" class="img-main">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="search-demo" class="search-demo-section">
+        <div class="container">
+            <div class="demo-card">
+                <div class="demo-header">
+                    <span class="subheadline">Live Demo</span>
+                    <h2>Search by specific plate.</h2>
+                    <p>Type a dish name below to see how DishList surfaces your memories and Google data.</p>
+                </div>
+                
+                <div class="search-widget">
+                    <div class="search-input-container">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        <input type="text" id="dishSearch" placeholder="Search for 'Ramen', 'Pesto', or 'Egg Salad'..." autocomplete="off">
+                    </div>
+                    
+                    <div id="searchResults" class="search-results-list">
+                        <!-- Dynamic results will appear here -->
+                        <div class="search-placeholder-msg">Start typing to explore your vault...</div>
+                    </div>
                 </div>
             </div>
         </div>
