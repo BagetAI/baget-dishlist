@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DishList | Your Personal Taste Passport</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">DishList</span>
+            </div>
+            <nav>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#waitlist" class="btn btn-primary">Join Waitlist</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge">Coming 2026</span>
+                <h1>Stop searching for <span class="italic">where</span> to eat. Start searching for <span class="italic">what</span> to eat.</h1>
+                <p class="lead">DishList is your digital Taste Passport. We index the specific plates you love, not just the places you find them. Build a searchable vault of your favorite meals today.</p>
+                <div class="hero-btns">
+                    <a href="#waitlist" class="btn btn-large btn-primary">Get Early Access</a>
+                    <a href="#features" class="btn btn-large btn-outline">See How It Works</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/editorial-food-photography-of-a-stunning.png" alt="Plated pasta with DishList app on phone" class="img-fluid floating">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Plate-First Discovery Engine</h2>
+                <p>Generic reviews are for tourists. DishList is for the high-intent urban foodie.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3>AI Quick Log</h3>
+                    <p>Import your camera roll. Our AI identifies the dish, tags the location, and creates a memory entry automatically.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Dish-Level Search</h3>
+                    <p>Craving the spiciest Rigatoni in Tribeca? Search by specific dish attributes and sentiment, not just business categories.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📒</div>
+                    <h3>The Taste Passport</h3>
+                    <p>A beautiful, searchable ledger of every amazing meal you've ever had. Never lose track of a hidden gem again.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container banner-inner">
+            <div class="banner-text">
+                <h2>Build Your Taste Passport</h2>
+                <p>Be the first to know when we launch in NYC and LA.</p>
+            </div>
+            <div class="banner-img">
+                <img src="images/minimalist-isometric-illustration-of-a-d.png" alt="DishList Passport Illustration">
+            </div>
+        </div>
+    </section>
+
+    <section id="waitlist" class="waitlist-section">
+        <div class="container">
+            <div class="waitlist-card">
+                <h2>Join the Inner Circle</h2>
+                <p>Early users get DishList Pro free for 3 months and priority access to our restaurant insights dashboard.</p>
+                <form id="waitlistForm" class="waitlist-form">
+                    <div class="form-group">
+                        <input type="text" name="full_name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="city" required>
+                            <option value="">Select City</option>
+                            <option value="NYC">New York City</option>
+                            <option value="LA">Los Angeles</option>
+                            <option value="SF">San Francisco</option>
+                            <option value="CHI">Chicago</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-large btn-primary full-width">Claim My Spot</button>
+                    <p id="formStatus" class="form-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-text">DishList</span>
+                    <p>The world's primary ledger for dish-level discovery and personal taste history.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Cities</h4>
+                    <ul>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">Los Angeles</a></li>
+                        <li><a href="#">San Francisco</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DishList. All rights reserved. eli@team-maia.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
