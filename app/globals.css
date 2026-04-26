@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --charcoal: #2D2926;
+  --saffron: #E89B00;
+  --sage: #4A5D23;
+  --linen: #F9F7F2;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F9F7F2] text-[#2D2926];
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#E89B00] text-white px-6 py-3 rounded-xl font-bold transition-all hover:-translate-y-1 hover:shadow-lg active:scale-95;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-[#2D2926] text-[#2D2926] px-6 py-3 rounded-xl font-bold transition-all hover:bg-[#2D2926] hover:text-white;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl p-6 shadow-[0_12px_32px_rgba(45,41,38,0.08)];
+  }
+}
