@@ -8,7 +8,7 @@ export async function GET(request: Request) {
   const category = searchParams.get('category')?.toLowerCase();
   
   try {
-    const response = await fetch(`https://baget.ai/api/public/databases/${DISHES_DB_ID}/rows`, {
+    const response = await fetch(`https://app.baget.ai/api/public/databases/${DISHES_DB_ID}/rows`, {
       next: { revalidate: 60 } // Cache for 60 seconds
     });
     

@@ -36,7 +36,7 @@ export async function POST(request: Request) {
       rating: Number(rating)
     };
 
-    const response = await fetch(`https://baget.ai/api/public/databases/${DISHES_DB_ID}/rows`, {
+    const response = await fetch(`https://app.baget.ai/api/public/databases/${DISHES_DB_ID}/rows`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ data: rowData }),

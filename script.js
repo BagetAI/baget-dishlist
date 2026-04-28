@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchDishes() {
         try {
-            const response = await fetch(`https://baget.ai/api/public/databases/${DISHES_DB_ID}/rows`);
+            const response = await fetch(`https://app.baget.ai/api/public/databases/${DISHES_DB_ID}/rows`);
             if (response.ok) {
                 const data = await response.json();
                 dishesData = data;
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = Object.fromEntries(formData.entries());
 
             try {
-                const res = await fetch(`https://baget.ai/api/public/databases/${WAITLIST_DB_ID}/rows`, {
+                const res = await fetch(`https://app.baget.ai/api/public/databases/${WAITLIST_DB_ID}/rows`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ data: data }),
